@@ -59,7 +59,7 @@ function App() {
               <About />
             </Route> */}
         {/* 
-            To Navigate and complete match use "exact path" bcz only "path" does partail matching 
+            To Navigate and complete match use "exact path" bcz only "path" does partial matching 
             EX- /user --> compoenent1
                 /user/home -->component2
             */}

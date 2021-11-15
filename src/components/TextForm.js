@@ -3,7 +3,6 @@ import React, { useState } from "react";
 // Hooks are a new addition in React 16.8 that let you use state and other react feature without writing class.
 
 export default function TextForm(props) {
-  //how to handle event
   //uppercase
   const handleUpClick = () => {
     // console.log("Uppercase was clicked" + text);
@@ -36,19 +35,16 @@ export default function TextForm(props) {
 
   //Remove Extra spaces
   const handleExtraSpaces = () => {
-    let newText = text.split(/[ ]+/); //have used Regex to remove spaces
+    let newText = text.split(/[ ]+/); //used Regex to remove spaces
     setText(newText.join(" "));
     props.showAlert("Extra spaces removed!", "success");
   };
 
-  //change
+  //onChange
   const handleOnChange = (event) => {
-    // console.log("handleOnChange");
-    //how to set state
     setText(event.target.value);
   };
 
-  //   const [text, setText] = useState("Enter text here");
   const [text, setText] = useState("");
   //   text = "new text"; //wrong way to change the state
   //   setText("new text"); //correct way to change the state

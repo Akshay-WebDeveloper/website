@@ -7,6 +7,7 @@ export default function About() {
   });
 
   //using state to change button text
+  //git reset --hard HEAD~1 to restore repository
   const [btntext, setBtntext] = useState("Enable Dark Mode");
 
   const toggleStyle = () => {
